@@ -48,7 +48,7 @@ const Inventory = () =>   {
 <div class="d-grid gap-2 col-6 mx-auto mb-4 mt-5">
 {/* <button type="button" className="btn btn-warning btn-lg " style={{alignItems: "center"}}>للتسجيل كامستثمر</button> */}
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSe9lal1wXyV2WjaDBtAU_tn0jo1x21j7uDvqEh10u7-6XdGLA/viewform?usp=sf_link" className="btn btn-warning btn-lg" tabindex="-1" role="button" aria-disabled="true">للتسجيل كامستثمر اضغط هنا</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSe9lal1wXyV2WjaDBtAU_tn0jo1x21j7uDvqEh10u7-6XdGLA/viewform?usp=sf_link" className="" tabindex="-1" role="button" aria-disabled="true">للتسجيل كامستثمر اضغط هنا</a>
 </div>
 <br/>
 </div>

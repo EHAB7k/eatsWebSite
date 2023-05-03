@@ -32,8 +32,10 @@ export default function Hiro () {
             <div className='md:w-3/6' data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100" >
                 <div className="flex flex-col w-full mt-8">
                     {/* <h1 className="text-xl text-gray-400">Hi, I'm</h1> */}
-                    <h1 className="text-2xl font-bold text-black">Welcome To Eats Home </h1>
-                    <p class="text-xl font-bold text-gray-300"></p>
+                    {/* <h1 className="text-2xl font-bold text-black">Welcome To Eats Home </h1> */}
+                    <h3 className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 text-amber-400 lg:text-4xl"><span className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-black md:text-5xl lg:text-2xl">Welcome To</span> eats website</h3>
+                    
+                    <p className="text-xl font-bold text-gray-300"></p>
                     <p className="text-md font-light text-gray-400 ">Eats is a platform that supports home food providers by presenting their best outcomes to benefit all customers around the Kingdom to enjoy variety of fresh food choices that will be delivered with the highest quality and in a timely manner.Eats is the brand name for TAWSIL AL-KHALIJIYYAH FOR TRADING COMPANY</p>
                 </div>
                 {/* <a href='http://blog.dama.ink' className='mt-2 block'>Go to My Blog <FontAwesomeIcon className='ml-2' icon={faCircleArrowRight}/> </a> */}
@@ -49,7 +51,7 @@ export default function Hiro () {
                         <a href=' https://play.google.com/store/apps/details?id=com.eatscustomer' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' color='gray' icon={faAndroid} /></a>
                     </li>
                     <li>
-                        <a href='https://wa.me/++966535888427' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' color='gray' icon={faWindows} /></a>
+                        <a href='https://wa.me/++966 535888427' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' color='gray' icon={faWindows} /></a>
                     </li>
                 </ul>
             </div>
