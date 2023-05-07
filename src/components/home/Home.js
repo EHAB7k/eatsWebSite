@@ -10,9 +10,11 @@ import CardApp from '/Users/ehabhakmi/Desktop/eats-ab-us/src/components/CardApp'
 import {Route, Switch} from "react-router-dom"
 import Hiro from '../Hiro';
 import Skills from '../Skills';
+import ContactForm from '../ContactForm';
 function Home() {
   return (
     <div>
+    <div className='px-6 lg:px-20 xl:px-36'>
       {/* <Navbar /> */}
        <Hiro/>
       <br/>
@@ -20,6 +22,9 @@ function Home() {
       <CardApp/>
       {/* <Skills />  */}
       <Skills/>
+      
+    </div>
+    <ContactForm/>
     </div>
   )
 }

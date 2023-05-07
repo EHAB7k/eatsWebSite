@@ -22,43 +22,102 @@ import express from "../assets/skills/express.svg"
 import gitlab from "../assets/skills/gitlab.svg"
 import swift from "../assets/skills/swift-vertical.svg"
 import hr from "../assets/curve-hr.svg"
-
+import eats from '../assets/eats-logorbg.png';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import "./ArrowTest.css"
 export default function Skills() {
+
+    // function SamplePrevArrow(props) {
+    //     const { className, style, onClick } = props;
+    //     return (
+    //       <div
+    //         className={className}
+    //         style={{ ...style, display: "block", backgroundColor:"black" }}
+    //         onClick={onClick}
+    //       />
+    //     );
+    //   }
+    //   function SampleNextArrow(props) {
+    //     const { className, style, onClick } = props;
+    //     return (
+    //       <div
+    //         className={className}
+    //         style={{ ...style, display: "block", background: "black" }}
+    //         onClick={onClick}
+    //       />
+    //     );
+    //   }
+
+    const SampleNextArrow = (props) => {
+        const { className, onClick } = props
+        return (
+            <div 
+                className={className}
+                onClick={onClick}
+            >
+                <FontAwesomeIcon
+                    icon={faAngleRight}
+                    color="#000"
+                    size="2x"
+                />
+            </div>
+        );
+    }
+
+    const SamplePrevArrow = (props) => {
+        const { className, onClick } = props
+        return (
+            <div 
+                className={className}
+                onClick={onClick}
+            >
+                <FontAwesomeIcon
+                    icon={faAngleLeft}
+                    color="#000"
+                    size="2x"
+                />
+            </div>
+        );
+    }
+
+
     const settings = {
-        dots: false,
+        dots: true,
         autoplay: true,
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 1
+        speed: 2000,
+        slidesToScroll: 2,
+           nextArrow: <SampleNextArrow/>,
+          prevArrow: <SamplePrevArrow/>
       };
 
     return (
-        <div id="skills" className="mt-4 text-white">
-            <h1 className="text-2xl text-black font-bold">developer</h1>
-            <p className="font-light text-gray-400">developer</p>
-
+        <div id="skills" className="mt-4 text-white ">
+            <div dir='rtl'>
+            <h1 className="text-2xl text-black font-bold">تحميل التطبيقات</h1>
+            <p className="font-light text-gray-400">للتحميل فقط اضغط على التطبيق المراد تحميلة</p>
+            </div>
             <div className="mt-4">
                 <Slider {...settings}>
-                {/* <SkillCard name="linux" experience="1 years" img={linux} />
-                <SkillCard name="bash" experience="1 years" img={bash} />
-                <SkillCard name="python" experience="1 years" img={python} />
-                <SkillCard name="javascript" experience="1 years" img={javascript} />
-                <SkillCard name="react" experience="1 years" img={reactIcon} />
-                <SkillCard name="tailwind" experience="1 years" img={tailwind} /> */}
-                {/* <SkillCard name="kvm" experience="1 years" img={kvm} /> */}
-                {/* <SkillCard name="mikrotik" experience="1 years" img={mikrotik} /> */}
-                {/* <SkillCard name="kubernetes" experience="1 years" img={kubernetes} /> */}
-                {/* <SkillCard name="swift" experience="1 years" img={swift} /> */}
-                <SkillCard name="windows" experience="dev" img={windows} />
-                {/* <SkillCard name="react" experience="1 years" img={react} /> */}
-                <SkillCard name="cisco" experience="dev" img={cisco} />
-                {/* <SkillCard name="docker" experience="1 years" img={docker} /> */}
-                <SkillCard name="git" experience="dev" img={git} />
+                
+              <a href='https://play.google.com/store/apps/details?id=com.eatscustomer'><SkillCard name="ايتس العميل" experience="اندرويد" img={eats} /></a>
+              <a href='https://apps.apple.com/sa/app/eats-customer/id1576647819'><SkillCard name="ايتس العميل" experience="ابل" img={eats} /></a>
+               
+              <a href=' https://play.google.com/store/apps/details?id=com.eatsrestaurant'><SkillCard name="ايتس المطعم" experience="اندرويد" img={eats} /></a>
+              <a href='https://apps.apple.com/us/app/eats-restaurant/id1576854640'><SkillCard name="ايتس المطعم" experience="ابل" img={eats} /></a>
+
+               
+              <a href='https://play.google.com/store/apps/details?id=com.eatsdriver '><SkillCard name="ايتس السائق" experience="اندرويد" img={eats} /></a>
+              <a href='https://apps.apple.com/us/app/eats-driver/id1576880595'><SkillCard name="ايتس السائق" experience="ابل" img={eats} /></a>
                 {/* <SkillCard name="express" experience="1 years" img={express} /> */}
                 {/* <SkillCard name="gitlab" experience="1 years" img={gitlab} /> */}
                 </Slider>
             </div>
-            <img src={hr} className="w-full mt-8 md:h-3" alt="hr" />
+            {/* <img src={hr} className="w-full mt-8 md:h-3" alt="hr" /> */}
         </div>
     )
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library, } from '@fortawesome/fontawesome-svg-core'
-import { faTruck,faDollarSign,faThumbsUp,faHeadset } from '@fortawesome/free-solid-svg-icons'
+import { faTruck,faDollarSign,faThumbsUp,faHeadset,faLocation } from '@fortawesome/free-solid-svg-icons'
 
 
 function CardApp() {
   return (
-    <div className='gap-4 flex flex-col md:flex-row' id="certdApp">
+    <div dir='rtl' className=' gap-2 flex flex-col md:flex-row' id="certdApp">
      {/* <a
   className="relative flex items-start justify-between rounded-xl border border-gray-100 p-4 shadow-xl sm:p-6 lg:p-8"
   href="#"
@@ -152,18 +152,18 @@ function CardApp() {
 </a>  */}
 
 
-<a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+{/* <a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
 <FontAwesomeIcon icon={faTruck} size="2xl"  style={{color: "#f5ec00",mt:"5px",mb:"9px",marginLeft:"40%"}} />
 
     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Ontime Delivery</h5>
     <p className="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
-</a>
+</a> */}
 
 
 <a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
 <FontAwesomeIcon icon={faDollarSign} size="2xl"  style={{color: "#f5ec00",mt:"5px",mb:"9px",marginLeft:"40%"}}/>
   
-    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Free Delivery Cost</h5>
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">التسجيل كا كابتن</h5>
     
     <p className="font-normal text-gray-700 dark:text-gray-400"> Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
 </a>
@@ -178,6 +178,23 @@ function CardApp() {
     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Support</h5>
     <p className="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
 </a>
+<a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+<FontAwesomeIcon icon={faLocation} size="2xl" style={{color: "#f5ec00",mb:"5px",mt:"1px",marginLeft:"40%"}} />
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">تتبع الطلب</h5>
+    <p className="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
+</a>
+
+<a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+<FontAwesomeIcon icon={faLocation} size="2xl" style={{color: "#f5ec00",mb:"5px",mt:"1px",marginLeft:"40%"}} />
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">التسجيل كا شريك</h5>
+    <p className="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
+</a>
+<a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+<FontAwesomeIcon icon={faLocation} size="2xl" style={{color: "#f5ec00",mb:"5px",mt:"1px",marginLeft:"40%"}} />
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">عملاء برنامج الولاء</h5>
+    <p className="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
+</a>
+
 
 
 

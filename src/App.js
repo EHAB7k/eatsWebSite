@@ -18,8 +18,10 @@ function App() {
       document.title = 'Ehab hakami';
       AOS.init();
     }, []);
+
+    
   return (
-    <div className="px-6 lg:px-20 xl:px-36">
+    <div className="">
       {/* <div className="px-6 lg:px-20 xl:px-36 bg-dark-500"></div> */}
       <Navbar />
       {/* <Hiro />
@@ -36,7 +38,9 @@ function App() {
 
         
     </Switch>
+    <div className='px-6 lg:px-20 xl:px-36'>
       <Footer />
+      </div>
     </div>
   );
 }

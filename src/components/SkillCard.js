@@ -4,7 +4,7 @@ export default function SkillCard(props){
             <img src={props.img} className="w-20 max-h-20 mx-auto" alt={props.name}></img>
             <div className="mt-2">
                 <h1 className="font-bold text-black md:text-xl">{props.name}</h1>
-                <p className="font-light text-gray-400 md:text-lg">{props.experience} 1</p>
+                <p className="font-light text-gray-400 md:text-lg">{props.experience} </p>
             </div>
         </div>
     )
