@@ -1,6 +1,6 @@
-export default function SkillCard(props){
+export default function QrCard(props){
     return (
-        <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" className="w-11/12  p-4 text-center justify-center border-2 border-gray-800 bg-white rounded-md flex flex-col h-48">
+        <div  className="w-11/11  p-4 text-center justify-center bg-white rounded-md flex flex-col h-48">
             <img src={props.img} className="w-28 max-h-28 mx-auto" alt={props.name}></img>
             <div className="mt-2">
                 <h1 className="font-bold text-black md:text-xl">{props.name}</h1>

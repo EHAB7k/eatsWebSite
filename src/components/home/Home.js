@@ -6,24 +6,23 @@ import React from 'react'
 // import Footer from './components/Footer';
 // import AOS from 'aos';
 import 'aos/dist/aos.css';
-import CardApp from '/Users/ehabhakmi/Desktop/eats-ab-us/src/components/CardApp';
+import CardApp from '../CardApp';
 import {Route, Switch} from "react-router-dom"
 import Hiro from '../Hiro';
 import Skills from '../Skills';
 import ContactForm from '../ContactForm';
+import AsNavFor from '../AsNavFor';
 function Home() {
   return (
     <div>
-    <div className='px-6 lg:px-20 xl:px-36'>
-      {/* <Navbar /> */}
-       <Hiro/>
-      <br/>
-      {/* <CardApp/> */}
-      <CardApp/>
-      {/* <Skills />  */}
-      <Skills/>
+    
       
-    </div>
+       
+       <Hiro/>
+      <br/> 
+      <CardApp/>
+      <Skills/> 
+      <AsNavFor/>
     <ContactForm/>
     </div>
   )

@@ -21,11 +21,11 @@ export default function Navbar() {
 
             {/* <li className="p-4"><a href="#honors" className="hover:underline">Honor & Awards</a></li> */}
             {/* <li className="p-4"><a href="#certs" className="hover:underline">dev3</a></li> */}
-            <NavLink to="/" className="nav-link" exact={true}><li className="p-4"><a className="hover:underline">الرائيسية</a></li></NavLink>
+            <Link to="/" className="nav-link"><li className="p-4"><a className="hover:underline">الرائيسية</a></li></Link>
 
             </ul>
             {/* <a href={resume} rel="noreferrer" target="_blank" className=" bg-teal-500 rounded-full px-4 py-1 border border-teal-800 border border-4">Inventory</a> */}
-            <NavLink to="/inventory" className="bg-teal-500 rounded-full px-4 py-1 border border-teal-800 border border-4" >الاستثمار</NavLink>
+            <Link to="/inventory" className="bg-teal-500 rounded-full px-4 py-1 border border-teal-800 border border-4" >الاستثمار</Link>
             {/* <NavLink to="/"exact={true}>Home</NavLink> */}
             
             

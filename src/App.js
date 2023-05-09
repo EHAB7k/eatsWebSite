@@ -9,20 +9,27 @@ import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CardApp from './components/CardApp';
-import {Route, Switch} from "react-router-dom"
+import {BrowserRouter, Route, Router, Switch} from "react-router-dom"
 import Inventory from './components/inventory/Inventory';
 import Home from './components/home/Home';
-
+import { createBrowserHistory } from "history";
+import {useState} from 'react'
+const history = createBrowserHistory();
 function App() {
     useEffect(() => {
-      document.title = 'Ehab hakami';
+      document.title = 'Eats';
       AOS.init();
     }, []);
 
     
   return (
-    <div className="">
+    <>
+     
+    <div className='px-6 lg:px-20 xl:px-36'>
+
+      
       {/* <div className="px-6 lg:px-20 xl:px-36 bg-dark-500"></div> */}
+      
       <Navbar />
       {/* <Hiro />
       <br/>
@@ -30,18 +37,24 @@ function App() {
       <Skills />
       {/* <Honors /> */}
       {/* <Certs /> */} 
-      <Switch>
       
-      <Route path="/" exact={true} component={Home} />
-        
-        <Route path="/inventory" component={Inventory} />
+      
+        <Switch>
 
+      <Route path="/" exact component={Home} />
         
-    </Switch>
-    <div className='px-6 lg:px-20 xl:px-36'>
+      <Route path="/inventory" component={Inventory} />
+      
+      </Switch>
+      
+      
+    
       <Footer />
-      </div>
+      
+      
     </div>
+
+    </>
   );
 }
 
