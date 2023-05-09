@@ -25,7 +25,7 @@ function App() {
   return (
     <>
      
-    <div className='px-6 lg:px-20 xl:px-36'>
+    <div className='px-10 lg:px-0 xl:px-36'>
 
       
       {/* <div className="px-6 lg:px-20 xl:px-36 bg-dark-500"></div> */}
@@ -48,11 +48,12 @@ function App() {
       </Switch>
       
       
+    </div>
     
       <Footer />
       
       
-    </div>
+    
 
     </>
   );

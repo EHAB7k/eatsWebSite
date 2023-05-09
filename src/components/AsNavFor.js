@@ -66,8 +66,8 @@ const SamplePrevArrow = (props) => {
     speed: 2000,
     slidesToScroll: 1,
     
-    //     nextArrow: <SampleNextArrow/>,
-    //    prevArrow: <SamplePrevArrow/>
+         nextArrow: <SampleNextArrow/>,
+        prevArrow: <SamplePrevArrow/>
   };
 
   return (
