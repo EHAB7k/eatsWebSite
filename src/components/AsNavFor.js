@@ -17,6 +17,24 @@ import eatsRestaurantApple from "../assets/EatsRestaurantApple.png"
 
 
 export default function AsNavFor() {
+
+let element ;
+
+if (localStorage.theme === 'dark') {
+  element = <h1>ehab hakami</h1>
+  
+}else if(localStorage.theme === 'light'){
+  element = <h1>ehab </h1>
+}else{
+  <h1>hakami </h1>
+}
+
+
+
+
+
+
+
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
 
@@ -36,7 +54,7 @@ export default function AsNavFor() {
         >
             <FontAwesomeIcon
                 icon={faAngleRight}
-                color="#000"
+                color="#434343"
                 size="2x"
             />
         </div>
@@ -52,7 +70,7 @@ const SamplePrevArrow = (props) => {
         >
             <FontAwesomeIcon
                 icon={faAngleLeft}
-                color="#000"
+                color="#434343"
                 size="2x"
             />
         </div>
@@ -75,9 +93,14 @@ const SamplePrevArrow = (props) => {
       {/* <h2>Slider Syncing (AsNavFor)</h2> */}
       <br/>
       <br/>
-      <h1 dir="rtl" className="text-2xl text-black font-bold">اذا حاب تحمل التطبيق عن طريق الباركود   </h1>
+      {/* <button onClick={toggleDarkMode} type="button" className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    dark/light
+                </button> */}
+
+                {/* {element} */}
+      <h1 dir="rtl" className="text-2xl text-black dark:text-white font-bold"> تحميل التطبيقات</h1>
      
-      <p dir="rtl" className="font-light text-gray-400">قم ب مسح الباركود</p>
+      <p dir="rtl" className="font-light text-gray-400">اذا حاب تحمل التطبيق عن طريق الضغط على الباركود او عن طريق مسح الباركود</p>
 
 
       <Slider asNavFor={nav2} ref={slider1}   >
@@ -104,6 +127,7 @@ const SamplePrevArrow = (props) => {
         <div className="text-center">
           {/* <h3>السائق ابل</h3> */}
         </div>
+
       </Slider>
       
       <Slider
@@ -115,17 +139,25 @@ const SamplePrevArrow = (props) => {
         {...settings}
       >
           
-              
-          <QrCard name="ايتس العميل" experience="اندرويد" img={qr} />
-              <QrCard name="ايتس العميل" experience="ابل" img={eatsCustomerApple} />
+         
+          {/* <QrCard name="ايتس العميل" experience="اندرويد" img={localStorage.theme === 'dark'? qr : eatsRestaurantApple}/> */}
+          <a href='https://play.google.com/store/apps/details?id=com.eatscustomer'> <QrCard name="ايتس العميل" experience="اندرويد" img={qr}/></a>
+          <a href='https://apps.apple.com/sa/app/eats-customer/id1576647819'>  <QrCard name="ايتس العميل" experience="ابل" img={eatsCustomerApple} /></a>
                
-              <QrCard name="ايتس المطعم" experience="اندرويد" img={eatsAndroidRestaurant} />
-              <QrCard name="ايتس المطعم" experience="ابل" img={eatsRestaurantApple} />
+          <a href=' https://play.google.com/store/apps/details?id=com.eatsrestaurant'><QrCard name="ايتس المطعم" experience="اندرويد" img={eatsAndroidRestaurant} /></a>
+          <a href='https://apps.apple.com/us/app/eats-restaurant/id1576854640'> <QrCard name="ايتس المطعم" experience="ابل" img={eatsRestaurantApple} /></a>
 
                
-              <QrCard name="ايتس السائق" experience="اندرويد" img={eatsDriverAndroid} />
-              <QrCard name="ايتس السائق" experience="ابل" img={eatsDriverApple} />
+          <a href='https://play.google.com/store/apps/details?id=com.eatsdriver '><QrCard name="ايتس السائق" experience="اندرويد" img={eatsDriverAndroid} /></a>
+          <a href='https://apps.apple.com/us/app/eats-driver/id1576880595'> <QrCard name="ايتس السائق" experience="ابل" img={eatsDriverApple} /> </a>
+
+              
         </Slider>
+
+        
+        
+
+        
       </div>
 
 )

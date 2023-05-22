@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.93071581.css",
-    "main.js": "/static/js/main.1673b575.js",
+    "main.css": "/static/css/main.7a84bd11.css",
+    "main.js": "/static/js/main.033a0dfa.js",
     "static/js/787.99f4d449.chunk.js": "/static/js/787.99f4d449.chunk.js",
     "static/media/imag2.png": "/static/media/imag2.2b80aaf080ad3b99cb8a.png",
     "static/media/img3.png": "/static/media/img3.bd9b09a03a5e8f167f1d.png",
@@ -10,6 +10,7 @@
     "static/media/img6.png": "/static/media/img6.7f6cef73250a03c4c6c6.png",
     "static/media/imag1.png": "/static/media/imag1.35a9715700e338b20ad8.png",
     "static/media/certificate-Eng.png": "/static/media/certificate-Eng.6ac88d31b122adc641c1.png",
+    "static/media/c1.jpg": "/static/media/c1.ef7350cc0fd2ae61392f.jpg",
     "static/media/certificate-dom.png": "/static/media/certificate-dom.894796b9b0fd909ec91d.png",
     "static/media/certificate-javascript-102.png": "/static/media/certificate-javascript-102.339dc935cb0001091c72.png",
     "static/media/certificate-javascript-101.png": "/static/media/certificate-javascript-101.a2510a97fd125b500ef3.png",
@@ -26,6 +27,7 @@
     "static/media/besic-python.png": "/static/media/besic-python.d5f6cff42385c3199ca0.png",
     "static/media/front-end-framework.png": "/static/media/front-end-framework.2d0d0b700a8ec3a8df74.png",
     "static/media/mtcna.jpg": "/static/media/mtcna.2ee5684f51d76ad95490.jpg",
+    "static/media/car-frame.png": "/static/media/car-frame.af4e05ecb5d24945625a.png",
     "static/media/05-Soft Skills-RUH-093.png": "/static/media/05-Soft Skills-RUH-093.962aae292f7a2d29cd90.png",
     "static/media/eats-logorbg.png": "/static/media/eats-logorbg.610b8a3dce290cbbe449.png",
     "static/media/linux.svg": "/static/media/linux.ff969ad1bae76cb9a7cc6aca65fd15f5.svg",
@@ -48,14 +50,14 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "static/media/swift-vertical.svg": "/static/media/swift-vertical.5d9d92c4058b3c9691795d4e588df30a.svg",
     "static/media/express.svg": "/static/media/express.ea97b712340ffb8f11d85ccb96309507.svg",
-    "static/media/windows.svg": "/static/media/windows.680a11acd0ab401f69e83c7caba17dc0.svg",
     "index.html": "/index.html",
-    "main.93071581.css.map": "/static/css/main.93071581.css.map",
-    "main.1673b575.js.map": "/static/js/main.1673b575.js.map",
+    "static/media/windows.svg": "/static/media/windows.680a11acd0ab401f69e83c7caba17dc0.svg",
+    "main.7a84bd11.css.map": "/static/css/main.7a84bd11.css.map",
+    "main.033a0dfa.js.map": "/static/js/main.033a0dfa.js.map",
     "787.99f4d449.chunk.js.map": "/static/js/787.99f4d449.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93071581.css",
-    "static/js/main.1673b575.js"
+    "static/css/main.7a84bd11.css",
+    "static/js/main.033a0dfa.js"
   ]
 }

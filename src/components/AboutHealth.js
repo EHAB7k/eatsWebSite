@@ -1,7 +1,7 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import SkillCard from "./SkillCard.js"
+import AboutHealthCard from "./AboutHealthCard.js"
 
 import javascript from "../assets/skills/javascript.svg"
 import bash from "../assets/skills/bash.svg"
@@ -26,30 +26,21 @@ import eats from '../assets/eats-logorbg.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faAngleRight, } from '@fortawesome/free-solid-svg-icons';
 import "./ArrowTest.css"
-export default function Skills() {
+export default function AboutHealth() {
 
-    // function SamplePrevArrow(props) {
-    //     const { className, style, onClick } = props;
-    //     return (
-    //       <div
-    //         className={className}
-    //         style={{ ...style, display: "block", backgroundColor:"black" }}
-    //         onClick={onClick}
-    //       />
-    //     );
-    //   }
-    //   function SampleNextArrow(props) {
-    //     const { className, style, onClick } = props;
-    //     return (
-    //       <div
-    //         className={className}
-    //         style={{ ...style, display: "block", background: "black" }}
-    //         onClick={onClick}
-    //       />
-    //     );
-    //   }
+    const cardData = {
+        titleFirst: 'الوقاية من ',
+        titleHighlight: 'السكري',
+        items: ['مارس الرياضة', 'لاتأكل الاكل الغير صحي', 'قياس السكر بعد الاكل']
+      };
+
+      const cardData2 = {
+        titleFirst: 'الوقاية من ',
+        titleHighlight: 'السمنه',
+        items: ['مارس الرياضة', 'لاتأكل الاكل الغير صحي', 'قياس السكر بعد الاكل']
+      };
 
     const SampleNextArrow = (props) => {
         const { className, onClick } = props
@@ -86,33 +77,27 @@ export default function Skills() {
 
     const settings = {
         dots: true,
-        autoplay: true,
+        autoplay: false,
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 1,
         speed: 2000,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
            nextArrow: <SampleNextArrow/>,
           prevArrow: <SamplePrevArrow/>
       };
 
+      
+
     return (
         <div id="skills" className="mt-4 text-white ">
             <div dir='rtl'>
-            <h1 className="text-2xl text-black dark:text-white font-bold">تحميل التطبيقات</h1>
-            <p className="font-light text-gray-400">للتحميل فقط اضغط على التطبيق المراد تحميلة</p>
+            <h1 className="text-2xl text-black dark:text-white font-bold">اهتم بصحتك</h1>
+            <p className="font-light text-gray-400">نصائح للاهتمام ب صحتك</p>
             </div>
             <div className="mt-4">
-                <Slider {...settings}>
-                
-              <a href='https://play.google.com/store/apps/details?id=com.eatscustomer'><SkillCard name="ايتس العميل" experience="اندرويد" img={eats} /></a>
-              <a href='https://apps.apple.com/sa/app/eats-customer/id1576647819'><SkillCard name="ايتس العميل" experience="ابل" img={eats} /></a>
-               
-              <a href=' https://play.google.com/store/apps/details?id=com.eatsrestaurant'><SkillCard name="ايتس المطعم" experience="اندرويد" img={eats} /></a>
-              <a href='https://apps.apple.com/us/app/eats-restaurant/id1576854640'><SkillCard name="ايتس المطعم" experience="ابل" img={eats} /></a>
-
-               
-              <a href='https://play.google.com/store/apps/details?id=com.eatsdriver '><SkillCard name="ايتس السائق" experience="اندرويد" img={eats} /></a>
-              <a href='https://apps.apple.com/us/app/eats-driver/id1576880595'><SkillCard name="ايتس السائق" experience="ابل" img={eats} /></a>
+                <Slider {...settings } className="sm:w-1/2 md:w-3/4 m-auto">
+                <AboutHealthCard {...cardData} />
+                <AboutHealthCard {...cardData2} />
                 {/* <SkillCard name="express" experience="1 years" img={express} /> */}
                 {/* <SkillCard name="gitlab" experience="1 years" img={gitlab} /> */}
                 </Slider>

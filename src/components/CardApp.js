@@ -1,12 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library, } from '@fortawesome/fontawesome-svg-core'
-import { faTruck,faDollarSign,faThumbsUp,faHeadset,faLocation } from '@fortawesome/free-solid-svg-icons'
-
-
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faTruck,faDollarSign,faThumbsUp,faHeadset,faLocation,faCar,faHandshake,faUtensils } from '@fortawesome/free-solid-svg-icons'
+// faForkKnife
 function CardApp() {
   return (
-    <div dir='rtl' className=' gap-2 flex flex-col md:flex-row' id="certdApp">
+    <div dir='rtl' className=' gap-5  flex flex-col justify-center md:flex-row' id="certdApp">
      {/* <a
   className="relative flex items-start justify-between rounded-xl border border-gray-100 p-4 shadow-xl sm:p-6 lg:p-8"
   href="#"
@@ -158,42 +157,45 @@ function CardApp() {
     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Ontime Delivery</h5>
     <p className="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
 </a> */}
+<a href="#OurAdvantages" className="block max-w-sm p-6 bg-white dark:bg-yellow-300 border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+<FontAwesomeIcon icon={faThumbsUp} size="2xl"  style={{color: "#000",mt:"5px",mb:"9px",marginLeft:"40%"}} />
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"> خدامتنا المميزة</h5>
+    <p className="font-normal text-gray-700 dark:text-gray-400"></p>
+</a>
+<a href="#" className="block dark:bg-yellow-300 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+<FontAwesomeIcon icon={faUtensils} size="2xl" style={{color: "#000",mb:"5px",mt:"1px",marginLeft:"40%"}} />
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">عملاء برنامج الذويقة</h5>
+    <p className="font-normal text-gray-700 dark:text-gray-400"></p>
+</a>
 
+<a href="#" className="block dark:bg-yellow-300 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+<FontAwesomeIcon icon={faHeadset} size="2xl" style={{color: "#000",mb:"5px",mt:"1px",marginLeft:"40%"}} />
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">الدعم تقني مباشر</h5>
+    <p className="font-normal text-gray-700 dark:text-gray-400"></p>
+</a>
+<a href="#" className="block dark:bg-yellow-300 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+<FontAwesomeIcon icon={faHandshake} size="2xl" style={{color: "#000",mb:"5px",mt:"1px",marginLeft:"40%"}} />
+    <h5 className="mb- text-2xl font-bold tracking-tight text-gray-900 dark:text-black">شاركناالنجاح</h5>
+    <p className="font-normal text-gray-700 dark:text-gray-400"></p>
+</a>
+ <a href="#" className="block max-w-sm p-6 dark:bg-yellow-300 border border-gray-200 rounded-lg shadow hover:bg-gray-100 "> 
+<FontAwesomeIcon icon={faCar} size="2xl"  style={{color: "#000",mt:"5px",mb:"9px",marginLeft:"40%"}}/>
 
-<a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-<FontAwesomeIcon icon={faDollarSign} size="2xl"  style={{color: "#f5ec00",mt:"5px",mb:"9px",marginLeft:"40%"}}/>
-  
-    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">التسجيل كا كابتن</h5>
+    <h3 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">شاركنا ياكابتن</h3>
     
-    <p className="font-normal text-gray-700 dark:text-gray-400"> Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
-</a>
-<a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-<FontAwesomeIcon icon={faThumbsUp} size="2xl"  style={{color: "#f5ec00",mt:"5px",mb:"9px",marginLeft:"40%"}} />
-    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black"> Best Quality Food</h5>
-    <p className="font-normal text-gray-700 dark:text-gray-400"> Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
-</a>
+    <p className="font-normal text-gray-700 dark:text-gray-400"></p>
+ </a>
 
-<a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-<FontAwesomeIcon icon={faHeadset} size="2xl" style={{color: "#f5ec00",mb:"5px",mt:"1px",marginLeft:"40%"}} />
-    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Support</h5>
-    <p className="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
-</a>
-<a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-<FontAwesomeIcon icon={faLocation} size="2xl" style={{color: "#f5ec00",mb:"5px",mt:"1px",marginLeft:"40%"}} />
+
+
+{/* <a href="#" className="block dark:bg-yellow-300 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+<FontAwesomeIcon icon={faLocation} size="2xl" style={{color: "#000",mb:"5px",mt:"1px",marginLeft:"40%"}} />
     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">تتبع الطلب</h5>
-    <p className="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
-</a>
+    <p className="font-normal text-gray-700 dark:text-gray-400"></p>
+</a> */}
 
-<a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-<FontAwesomeIcon icon={faLocation} size="2xl" style={{color: "#f5ec00",mb:"5px",mt:"1px",marginLeft:"40%"}} />
-    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">التسجيل كا شريك</h5>
-    <p className="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
-</a>
-<a href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-<FontAwesomeIcon icon={faLocation} size="2xl" style={{color: "#f5ec00",mb:"5px",mt:"1px",marginLeft:"40%"}} />
-    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">عملاء برنامج الولاء</h5>
-    <p className="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet tincidunt.</p>
-</a>
+
+
 
 
 

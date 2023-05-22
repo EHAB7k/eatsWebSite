@@ -179,7 +179,7 @@ function ContactForm() {
                     </div>
                   </div>
                   <div className="grow ml-6">
-                    <p className="font-bold mb-1">خدمة العملاء</p>
+                    <p className="font-bold mb-1 dark:text-white">خدمة العملاء</p>
                     <p className="text-gray-500">support@example.com</p>
                     <p className="text-gray-500">+1 234-567-89</p>
                   </div>
@@ -198,7 +198,7 @@ function ContactForm() {
                     </div>
                   </div>
                   <div className="grow ml-6">
-                    <p className="font-bold mb-1"> div </p>
+                    <p className="font-bold mb-1 dark:text-white"> div </p>
                     <p className="text-gray-500"> div </p>
                     <p className="text-gray-500">+1 234-567-89</p>
                   </div>
@@ -217,7 +217,7 @@ function ContactForm() {
                     </div>
                   </div>
                   <div className="grow ml-6">
-                    <p className="font-bold mb-1">التوظيف</p>
+                    <p className="font-bold mb-1 dark:text-white">التوظيف</p>
                     <p className="text-gray-500">press@example.com</p>
                     <p className="text-gray-500">+1 234-567-89</p>
                   </div>
@@ -236,7 +236,7 @@ function ContactForm() {
                     </div>
                   </div>
                   <div className="grow ml-6">
-                    <p className="font-bold mb-1">الدعم التقني</p>
+                    <p className="font-bold mb-1 dark:text-white">الدعم التقني</p>
                     <p className="text-gray-500">bugs@example.com</p>
                     <p className="text-gray-500">+1 234-567-89</p>
                   </div>

@@ -12,18 +12,31 @@ import Hiro from '../Hiro';
 import Skills from '../Skills';
 import ContactForm from '../ContactForm';
 import AsNavFor from '../AsNavFor';
+import IphoneScreenShot from '../IphoneScreenShot';
+import IphoneScreenCard from '../IphoneScreenCard';
+import AboutHealth from '../AboutHealth';
+import OurAdvantagesCard from '../OurAdvantagesCard';
+import OurAdvantages from '../OurAdvantages';
 function Home() {
   return (
-    <div>
+    <div className='px-6 lg:px-20 xl:px-36 '>
     
       
        
        <Hiro/>
       <br/> 
       <CardApp/>
-      <Skills/> 
+      {/* <Skills/>  */}
+      <AboutHealth/>
       <AsNavFor/>
+
+    <OurAdvantages/>
     <ContactForm/>
+
+    {/* <IphoneScreenCard/> */}
+    {/* <IphoneScreenShot/> */}
+    <br/> 
+    <br/> 
     </div>
   )
 }

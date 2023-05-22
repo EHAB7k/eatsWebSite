@@ -38,6 +38,9 @@
   "aos": "^3.0.0-beta.6",
   
     
+  "daisyui": "^2.51.6",
+  
+    
   "flowbite": "^1.6.5",
   
     
@@ -58,6 +61,7 @@
     
   "react-router-dom": "^5.3.4",
   
+    
   "react-scripts": "5.0.1",
   
     

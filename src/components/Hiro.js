@@ -1,10 +1,11 @@
 import {useState} from 'react'
 
 import profile from '../assets/eats-logorbg.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCircleArrowRight, } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faCircleArrowRight,faHandshake } from "@fortawesome/free-solid-svg-icons";
 import {  faGithub, faInstagram, faLinkedinIn,faWhatsapp,faAppStore,faAndroid,faWindows } from "@fortawesome/free-brands-svg-icons";
 import hr from '../assets/curve-hr.svg'
+import IphoneScreenShot from './IphoneScreenShot';
 
 export default function Hiro () {
 
@@ -20,20 +21,29 @@ export default function Hiro () {
             null
         } */}
         <div id="home" className="flex w-full h-screen flex-col md:flex-row gap-5 items-center justify-center text-white relative">
-                <div className='md:w-3/6 md:p-4'>
+                <div className='md:w-3/6 md:p-4 xs:hidden'>
                     
                     {/* <img className="rounded-full w-80 h-80" src="/docs/images/examples/image-4@2x.jpg" alt="image description"/> */}
                     {/* <br></br>
                     <br></br>
                     <br></br> */}
 
-                <img className='rounded-full h-auto max-h-80 ' data-aos="flip-right" data-aos-duration="1500" data-aos-offset="200"  src={profile} alt="profile" onLoad={() => setLoaded(false)} />
+                {/* <img className='rounded-full h-auto max-h-80' data-aos="flip-right" data-aos-duration="1500" data-aos-offset="200"  src={profile} alt="profile" onLoad={() => setLoaded(false)} /> */}
+                <br/>
+                <br/>
+                <IphoneScreenShot/>
+            
             </div>
+            <div className='md:w-3/6 md:p-4 sm:hidden md:hidden'>
+
+            <img className='rounded-full h-auto max-h-80' data-aos="flip-right" data-aos-duration="1500" data-aos-offset="200"  src={profile} alt="profile" onLoad={() => setLoaded(false)} />
+         </div> 
+
             <div className='md:w-3/6' data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100" >
                 <div className="flex flex-col w-full mt-8">
                     {/* <h1 className="text-xl text-gray-400">Hi, I'm</h1> */}
                     {/* <h1 className="text-2xl font-bold text-black">Welcome To Eats Home </h1> */}
-                    <h3 dir="rtl" className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 text-amber-400 lg:text-4xl md:text-4xl text-3xl "><span className="mb-4  text-3xl font-extrabold text-gray-900 dark:text-black md:text-2xl lg:text-2xl">مرحبا بك في </span>إيتس </h3>
+                    <h3 dir="rtl" className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 text-amber-400 lg:text-4xl md:text-4xl text-3xl "><span className="mb-4  text-3xl font-extrabold text-gray-900 dark:text-white md:text-2xl lg:text-2xl ">مرحبا بك في </span>إيتس </h3>
                     
                     <p className="text-xl font-bold text-gray-300"></p>
                     <p className="text-ml font-light text-gray-400 ">نحن شركة تـوصـیـل الخـلیـجیـــة هدفنا تأسيس شرکة سعودیة مساهمة مقفلة، لمواکبة التقنیة والاهتمام بقطاع الأغذية والمشروبات من خلال تطوير الخدمات وتطويرها واتمتتها وإيجاد حلول يشارك فيها جميع الأطراف لكي تكون المنفعة عامة ومستدامة. ويقوم على إدارة هذا تحالف مجموعة من المستثمرين في هذا القطاع كشركاء وأعضاء مجلس إدارة مرشحين من قبل الجمعية العمومية وفق المنصوص في نظام وزارة التجارة وحسب نظام حوکمة الشرکات في المملكة العربية السعودیة.</p>
