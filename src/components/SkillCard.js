@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function SkillCard(props) {
   return (
     <div
@@ -15,9 +16,10 @@ export default function SkillCard(props) {
         <h1 className="font-bold dark:text-white text-black md:text-xl">
           {props.name}
         </h1>
-        <p className="font-light  text-gray-400 md:text-lg">
+        <div className="font-light  text-gray-400 md:text-lg">
           {props.experience}{' '}
-        </p>
+          <FontAwesomeIcon size="md" color="green" icon={props.icon1} />
+        </div>
       </div>
     </div>
   )

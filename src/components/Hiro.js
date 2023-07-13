@@ -122,9 +122,9 @@ export default function Hiro() {
               </a>
             </li>
           </ul>
-          <p className="text-4xl  font-light text-gray-400 text-amber-400 ">
+          {/* <p className="text-4xl  font-light text-gray-400 text-amber-400 ">
             الموقع تحت التطوير
-          </p>
+          </p> */}
         </div>
         <img src={hr} className="w-full md:h-2 absolute bottom-0" alt="hr" />
       </div>
