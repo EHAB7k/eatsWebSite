@@ -5,17 +5,21 @@ function Navbar() {
     {
       name: 'عن الشركة',
       options: [
-        { id: 1, label: 'Option 1', url: '#' },
-        { id: 2, label: 'Option 25', url: '#' },
-        { id: 3, label: 'Option 3', url: '#' },
+        { id: 1, label: 'نبذة عن الشركة', url: '#' },
+        { id: 2, label: 'الرؤية', url: '#' },
+        { id: 3, label: 'قيمنا', url: '#' },
+        { id: 3, label: 'الرسالة', url: '#' },
+        { id: 3, label: 'استراتيجيتنا', url: '#' },
+        { id: 3, label: 'مجلس الإدارة', url: '#' },
+        { id: 3, label: 'الإدارة التنفيذية', url: '#' },
       ],
     },
     {
       name: 'تطبيق ايتس',
       options: [
-        { id: 1, label: 'Option 1', url: '#' },
-        { id: 2, label: 'Option 2', url: '#' },
-        { id: 3, label: 'Option 34', url: '#' },
+        { id: 1, label: 'قيمنا', url: '#' },
+        { id: 2, label: 'خدماتنا', url: '#' },
+        { id: 3, label: 'مميزات التطبيق', url: '#' },
       ],
     },
     // {

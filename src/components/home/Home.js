@@ -18,12 +18,17 @@ import AboutHealth from '../AboutHealth'
 import OurAdvantagesCard from '../OurAdvantagesCard'
 import OurAdvantages from '../OurAdvantages'
 import SlowerExample from '../SlowerExample'
+import PepoleMangament from '../PepoleMangament'
+import MassageAndVi from '../MassageAndVi'
 function Home() {
   return (
     <div className="px-6 lg:px-20 xl:px-36 ">
       <Hiro />
       <br />
       <CardApp />
+      <br />
+      <MassageAndVi />
+      <PepoleMangament />
       {/* <Skills/>  */}
       <AboutHealth />
       <AsNavFor />
