@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import eatslogo from '/Users/ehabhakmi/Desktop/eats-ab-us/src/assets/eats-logorbg.png'
+import { Link, NavLink } from 'react-router-dom'
 function Navbar() {
   const [dropdowns, setDropdowns] = useState([
     {
@@ -119,6 +120,7 @@ function Navbar() {
         >
           dark/light
         </button>
+        <Link to="/inventory" className=" "></Link>
       </div>
     </nav>
   )
