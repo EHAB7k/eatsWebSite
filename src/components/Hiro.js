@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import profile from '../assets/eats-logorbg.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -17,19 +17,37 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import hr from '../assets/curve-hr.svg'
 import IphoneScreenShot from './IphoneScreenShot'
+import loadedStyle from './Loader.css'
 
 export default function Hiro() {
-  const [loaded, setLoaded] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
+
+  useEffect(() => {
+    // Simulate loading delay
+    setTimeout(() => {
+      setIsLoading(true)
+    }, 3000)
+  }, [])
 
   return (
     <>
-      {/* {loaded ?
-        <div
-            className="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-white flex flex-col items-center justify-center"
-        >Loading...</div>
-            :
-            null
-        } */}
+      {isLoading ? null : (
+        <div className="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-black flex flex-col items-center justify-center">
+          <div className="loader">
+            <div className="circles">
+              <span className="one"></span>
+              <span className="two"></span>
+              <span className="three"></span>
+            </div>
+            <div className="pacman">
+              <span className="top"></span>
+              <span className="bottom"></span>
+              <div className="eye"></div>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div
         id="home"
         className="flex w-full h-screen flex-col md:flex-row gap-5 items-center justify-center text-white relative"
@@ -53,7 +71,7 @@ export default function Hiro() {
             data-aos-offset="200"
             src={profile}
             alt="profile"
-            onLoad={() => setLoaded(false)}
+            // onLoad={() => setIsLoading(false)}
           />
         </div>
 

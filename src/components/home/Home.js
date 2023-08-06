@@ -20,6 +20,7 @@ import OurAdvantages from '../OurAdvantages'
 import SlowerExample from '../SlowerExample'
 import PepoleMangament from '../PepoleMangament'
 import MassageAndVi from '../MassageAndVi'
+import File from '../File'
 function Home() {
   return (
     <div className="px-6 lg:px-20 xl:px-36 ">
@@ -28,6 +29,7 @@ function Home() {
       <CardApp />
       <br />
       <MassageAndVi />
+      <File />
       <PepoleMangament />
       {/* <Skills/>  */}
       <AboutHealth />

@@ -5,7 +5,7 @@ function OurAdvantagesCard(props) {
   return (
     <div
       dir="rtl"
-      className="space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400 mt-20 mb-10 shadow-lg rounded-lg dark:bg-dark-300 "
+      className="space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400 mt-20 mb-10 shadow-lg rounded-lg dark:bg-dark-300  dark:hover:bg-dark-400 hover:bg-gray-100  "
     >
       <header className="text-center text-black mb-5 dark:text-gray-400 rounded-md bg-gradient-to-r p-2">
         <h1 className="mt-2 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-4xl dark:text-white">

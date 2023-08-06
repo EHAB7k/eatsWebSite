@@ -37,12 +37,13 @@ function SlowerExample() {
       <div
         onClick={() => setFlip(!flip)}
         id="driverSignup"
-        className="OurAdvantages "
+        className="OurAdvantages"
+        style={{ cursor: 'pointer' }}
       >
         {/* Render the OurAdvantagesCard component with the example data */}
         <OurAdvantagesCard
           titleFirst="شاركنا "
-          titleHighlight="ياكابتن"
+          titleHighlight=" ياكابتن"
           advantages={driverSignup}
           // details={detailsData}
         />{' '}
@@ -50,7 +51,7 @@ function SlowerExample() {
       <div
         dir="rtl"
         onClick={() => setFlip(!flip)}
-        className="flex flex-col gap-6 justify-center items-center align-middle h-1/2 w-40% text-center text-gray-500 dark:text-gray-400 mt-5 mb-40 shadow-lg rounded-lg dark:bg-dark-300"
+        className="flex flex-col gap-6  justify-center items-center align-middle h-1/2 w-40% text-center text-gray-500 dark:text-gray-400 mt-5 mb-40 shadow-lg rounded-lg dark:bg-dark-300"
       >
         <h1 className="mt-5 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-1xl lg:text-2xl dark:text-white">
           مرحباً يا كابتن! اضغط على المتجر الذي ترغب في الذهاب إليه
