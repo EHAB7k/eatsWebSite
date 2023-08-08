@@ -48,12 +48,12 @@ function App() {
 
   // <ContactForm />
   return (
-    <>
+    <div className="dark:bg-dark-500">
       {/* <div className='px-10 lg:px-0 xl:px-36'> */}
 
-      <div className=" dark:bg-dark-500 px-6 lg:px-20 xl:px-36">
+      <div className=" px-6 lg:px-20 xl:px-36">
         <Navbar />
-        <Hiro />
+        {/* <Hiro />
         <br />
         <CardApp />
         <br />
@@ -63,18 +63,17 @@ function App() {
         <AsNavFor />
         <OurAdvantages />
         <SlowerExample />
-        <ContactForm />
+        <ContactForm />  */}
       </div>
-      <div>
+      <div className=" dark:bg-dark-500">
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/eatsWebSite" exact component={Home} />
 
-          <Route path="/inventory" component={Inventory} />
+          <Route path="/eatsWebSite/inventory" component={Inventory} />
         </Switch>
-
-        <Footer />
       </div>
-    </>
+      <Footer />
+    </div>
   )
 }
 

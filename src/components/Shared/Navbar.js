@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import eatslogo from '/Users/ehabhakmi/Desktop/eats-ab-us/src/assets/eats-logorbg.png'
 import { Link, NavLink } from 'react-router-dom'
 function Navbar() {
@@ -43,14 +43,32 @@ function Navbar() {
     }
   }
 
-  const toggleDarkMode = () => {
-    if (localStorage.theme === 'dark') {
-      localStorage.theme = 'light'
-      document.documentElement.classList.remove('dark')
-    } else {
+  // const [darkMode, setdDarkMode] = useState(localStorage.theme === 'dark')
+
+  // const toggleDarkMode = () => {
+  //   if (localStorage.theme === 'dark') {
+  //     localStorage.theme = 'light'
+  //     document.documentElement.classList.remove('dark')
+  //   } else {
+  //     localStorage.theme = 'dark'
+  //     document.documentElement.classList.add('dark')
+  //   }
+  // }
+
+  const [darkMode, setDarkMode] = useState(localStorage.theme === 'dark')
+
+  useEffect(() => {
+    if (darkMode) {
       localStorage.theme = 'dark'
       document.documentElement.classList.add('dark')
+    } else {
+      localStorage.theme = 'light'
+      document.documentElement.classList.remove('dark')
     }
+  }, [darkMode])
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevDarkMode) => !prevDarkMode)
   }
 
   return (
